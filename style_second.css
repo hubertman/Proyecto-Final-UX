@@ -1,0 +1,110 @@
+/* Estilos base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #e9e9e9;
+}
+
+/* Simulación de un teléfono móvil */
+.phone {
+    width: 390px; /* Ancho para simular un iPhone 12 */
+    height: 844px; /* Altura para simular un iPhone 12 */
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para simular el teléfono */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ajuste para alinear el contenido desde la parte superior */
+}
+
+.app-container {
+    max-width: 390px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+header {
+    padding-left: 20px; /* Padding para no pegar los textos al borde */
+    text-align: left; /* Alineación a la izquierda */
+}
+
+header h1, header h2, header h3 {
+    color: #000080;
+    margin: 10px 0;
+}
+
+/* Estilos para los elementos de la tarjeta */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h4 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #000;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ajustes para dispositivos móviles */
+@media only screen and (max-width: 400px) {
+    .phone {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .app-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    header {
+        padding-left: 10px; /* Menor padding para pantallas pequeñas */
+    }
+}
