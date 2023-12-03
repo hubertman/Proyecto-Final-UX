@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Crisol Beneficios</title>
 <link rel="stylesheet" href="styles.css">
+<script src="Scripts.js"></script>
 </head>
 <body>
 <div class="phone">
   <div class="container">
     <h1>CrisolBenefics</h1>
     <h2>Te damos la bienvenida a experiencias únicas</h2>
-    <form action="second_page.html" method="post">
+    <!-- <form action="second_page.html" method="post">  -->
       <div class="form-group">
         <label for="document-type">Tipo de documento</label>
         <select id="document-type" name="document-type">
@@ -27,8 +28,8 @@
         <label for="document-number">Número de documento</label>
         <input type="text" id="document-number" name="document-number" placeholder="Número de documento">
       </div>
-      <button type="submit">Ingresar</button>
-    </form>
+      <button type="submit" onclick="redirectTo('second_page.html')">Ingresar</button>
+    <!-- </form> -->
   </div>
 </div>
 </body>

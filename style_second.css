@@ -23,6 +23,8 @@ body, html {
     max-width: 390px;
     margin: auto;
     padding-bottom: 20px;
+    max-height: 100vh; /* Altura máxima igual a la altura de la ventana */
+    overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
 }
 
 header {
@@ -108,3 +110,11 @@ footer {
         padding-left: 10px; /* Menor padding para pantallas pequeñas */
     }
 }
+.back-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #000080;
+  }
